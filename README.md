@@ -53,5 +53,5 @@ Thực hiện command crontab -e trên server để thiết lập 1 job tự đ�
 0 0 * * * /opt/scripts/backup.sh >/dev/null 2>&1
 ```
 Đoạn script sẽ tự động được chạy bởi Cron Job lúc 00:00 hàng ngày theo múi giờ thiết lập trên server.
-![image](https://user-images.githubusercontent.com/21152088/115555793-21e29600-a2da-11eb-8753-2fc8f7e7fb62.png)
+`![image](https://user-images.githubusercontent.com/21152088/115555793-21e29600-a2da-11eb-8753-2fc8f7e7fb62.png)`
 
