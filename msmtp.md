@@ -66,28 +66,38 @@ account account default: gmail
 ```
 For OVH in the general settings, remember to disable starttls:
  `tls_starttls   off `
+ 
 If you want to configure the sending of emails at the user level, create the `.msmtprc` file in the personal folder of the affected user. 
 This file should only be accessible for reading and writing to the user:
 `chmod 600 .msmtprc`
+
 It is necessary to check that the system uses msmtp well for sending mail:
 `ls -la /usr/sbin/sendmail`
+
 Who should return:
 `lrwxrwxrwx 1 root root 12 nov.  28  2016 /usr/sbin/sendmail -> ../bin/msmtp`
+
 If not, reinstall the msmtp-mta package .
 
 ## Function test
+
 `echo 'message' | mail user@domain.com`
+
 If that doesn't work, try:
 `echo 'message' | msmtp user@domain.com`
+
 Check his inbox.
 If the command maildoes not work, install the bsd-mailx package :
 `sudo apt install bsd-mailx`
+
 If you receive this error message: 
 send-mail: impossible d'écrire dans le journal /var/log/msmtp.log : erreur d'ouverture de fichier: Permission non accordée 
 the solution is summarized on this page in French. and specified on its source in English Successfully tested on Ubuntu 20.04.
 
 
 # Uninstallation
-To remove this application, just remove its package . Depending on the method chosen, the global configuration of the application is kept or deleted. System logs, and users' preference files in their personal folders are always kept.
+To remove this application, just remove its package . 
+Depending on the method chosen, the global configuration of the application is kept or deleted. 
+System logs, and users' preference files in their personal folders are always kept.
 
 
