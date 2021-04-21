@@ -5,6 +5,7 @@ It is fully compatible with sendmail, supports TLS secure transport , multiple a
 
 # Prerequisites
  Have fully functional Internet connectivity.
+ 
  Enabling less secure apps to access Gmail https://www.google.com/settings/security/lesssecureapps to get pass
 
 	
