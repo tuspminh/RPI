@@ -4,7 +4,9 @@ Its default operating mode consists of forwarding e-mails to the SMTP server tha
 It is fully compatible with sendmail, supports TLS secure transport , multiple accounts, various authentication methods, and delivery notifications.
 
 # Prerequisites
-	• Have fully functional Internet connectivity.
+	Have fully functional Internet connectivity.
+	Enabling less secure apps to access Gmail https://www.google.com/settings/security/lesssecureapps to get pass
+
 	
 # Installation
 To install this software, just install the msmtp and msmtp-mta packages .
